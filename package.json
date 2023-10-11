@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "tap \"test/**/*.test.js\"",
-    "start": "sleep 10 && NOW=$(date +\"%T\") fastify start -l info app.js",
+    "start": "sleep 5 && NOW=$(date +\"%T\") fastify start -l info -a 0.0.0.0 app.js ",
     "dev": "fastify start -w -l info -P app.js"
   },
   "keywords": [],
