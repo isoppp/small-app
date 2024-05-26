@@ -4,6 +4,8 @@ FROM node:20-alpine as base
 
 FROM base AS runner
 
+RUN apk add --no-cache curl # for coolify healthcheck
+
 ENV NODE_ENV production
 
 WORKDIR /app
